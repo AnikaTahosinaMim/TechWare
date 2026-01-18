@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #1a0b2e;
+}
 nav {
   background-color: #1a0b2e;
   padding: 5px 0;
@@ -46,15 +49,15 @@ nav {
   color: white;
   text-align: center;
 }
-.what h2{
+.what h2 {
   font-size: 2.3rem;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   margin-bottom: 15px;
 }
-.what p{
+.what p {
   font-size: 1rem;
-  font-weight: 400 ;
+  font-weight: 400;
   color: #eee8e8;
   font-family: "Inter", sans-serif;
   margin-bottom: 50px;
@@ -70,29 +73,28 @@ nav {
 }
 .card {
   max-width: 240px;
-  
+
   text-align: center;
-  margin-top:30px ;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
-.card p{
-  color:rgb(248, 245, 245);
+.card p {
+  color: rgb(248, 245, 245);
   font-size: 1rem;
   line-height: 24px;
-  font-family: "Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
-.card h2{
-  font-family: "Inter", sans-serif ;
+.card h2 {
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 800;
-  color: #00FF88;
+  color: #00ff88;
 }
-
 
 hr {
   max-width: 1200px;
   margin: 10px auto;
-  
+
   border: 1px solid #4d4a4a;
 }
 
@@ -103,43 +105,41 @@ hr {
   background-color: #1a0b2e;
   margin: 0 auto;
 }
-.clock{
-   display: flex;
+.clock {
+  display: flex;
   gap: 6px;
 }
-.video-text{
+.video-text {
   padding: 15px;
   display: grid;
   gap: 8px;
 }
-.fram{
+.fram {
   border-radius: 15px 15px 0px 0;
 }
-.video{
+.video {
   border-radius: 8px;
 }
-.video-container{
+.video-container {
   max-width: 300px;
-  background-color: #250D44;
+  background-color: #250d44;
   border-radius: 15px;
   margin-bottom: 20px;
 }
-.max-container{
+.max-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-
+  grid-template-columns: repeat(3, 1fr);
 }
 /* this this challenge part*/
-.chal-section{
+.chal-section {
   max-width: 1200px;
-  background-color: #250D44;
+  background-color: #250d44;
   margin: 0 auto;
-
   border-radius: 15px;
 }
-.text{
+.text {
   margin: 15px auto;
   text-align: center;
   color: white;
@@ -147,64 +147,111 @@ hr {
   font-family: "Inter", sans-serif;
   font-size: 2.2rem;
 }
-.chal-container{
+.chal-container {
   display: flex;
   gap: 30px;
-  padding-top: 20px;
-  padding-left: 20px;
-
-
+  padding: 20px;
+  margin-bottom: 120px;
+  margin-top: 30px;
 }
-.text-div{
+.text-div {
   align-items: center;
   justify-content: center;
-  margin-top: 30px ;
+  margin-top: 30px;
   color: white;
   display: grid;
   gap: 10px;
   margin-left: 10px;
 }
-.text-div h2{
+.text-div h2 {
   font-size: 2rem;
-  color:white;
+  color: white;
   font-weight: 600;
-  font-family: "Inter", sans-serif ;
-
-
+  font-family: "Inter", sans-serif;
 }
-.text-div p{
+.text-div p {
   font-size: 1rem;
   color: rgb(199, 195, 195);
   font-weight: 500;
-  font-family: "Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   line-height: 24px;
 }
-.icons-div img{
+.icons-div img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid rgb(78, 77, 77);
   padding: 10px;
   gap: 30px;
-  
 }
 
-@media screen and (max-width:576px) {
-  .chal-container{
-    flex-direction: column;
+/* this is footer section */
+.footer-container {
+  width: 100%;
+  height: 250px;
+  background-image: url("./assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(235, 233, 233);
+  font-family:"Inter", sans-serif ;
+  text-align: center;
+  padding: 20px;
+}
+.footer-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.icons-class img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.icons-class {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  align-items: center;
+}
+.item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container h1{
+  font-size: 3rem;
+  font-weight:700 ;
+  font-family: "Inter", sans-serif;
+}
+.footer-container span{
+  color: rgb(221, 7, 221);
+}
 
+@media screen and (max-width: 576px) {
+  .chal-container {
+    flex-direction: column;
   }
-  .text-div,.img-div,.what{
+  .text-div,
+  .img-div,
+  .what {
     text-align: center;
   }
-  .max-container{
-    grid-template-columns: repeat(1,1fr);
+  .max-container {
+    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  .card-container{
-    grid-template-columns: repeat(2,1fr);
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-
-  
+  .icons-class{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+     
+  }
 }
