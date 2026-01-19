@@ -6,6 +6,7 @@
 body {
   background-color: #1a0b2e;
 }
+/* this is the nav section */
 nav {
   background-color: #1a0b2e;
   padding: 5px 0;
@@ -42,13 +43,13 @@ nav ul{
   font-family: "Inter", sans-serif;
 }
 .btn{
-  padding: 12px 24px;
+  padding: 10px 24px;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: white;
   background: linear-gradient(45deg, #c90a9f, #2e3031);
-  border-radius: 8px;
+  border-radius: 20px;
   position: relative;
   z-index: 1
 }
@@ -67,6 +68,73 @@ nav ul{
   0% { background-position: 0%; }
   100% { background-position: 100%; }
 }
+
+/* and the nav sections end */
+
+
+/* star of banner sections */
+.banner{
+  max-width: 1600px;
+}
+.main-img{
+  position: relative;
+}
+.secound-img{
+  position: absolute;
+  inset: 0;
+  top: 20%;
+  left: 37%;
+}
+.thir-img{
+  position: absolute;
+  left: 44%;
+  top: 30%;
+}
+.banner-text{
+  position: absolute;
+  left: 34%;
+  top: 80%;
+  text-align: center;
+}
+.banner-text h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.banner-text p{
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #ffff;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+.mother-btn{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.btn-02{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: white;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #c90a9f, #391ead)
+}
+.btn-03{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 12px;
+  background-color: none;
+
+}
+
+
+
+
 
 .what-container {
   max-width: 1600px;
