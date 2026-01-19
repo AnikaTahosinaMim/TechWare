@@ -10,34 +10,62 @@ nav {
   background-color: #1a0b2e;
   padding: 5px 0;
 }
+
 .nav-container {
+  display: flex;
   max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  margin: auto;
+  justify-content: space-between;
   align-items: center;
   color: white;
-}
-.menu-icon{
-  display: none;
 }
 .menu {
-  display: flex;
-  gap: 25px;
+  display: none;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.wave {
+  background: linear-gradient(45deg, #ff00c8, #00c8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul{
   list-style: none;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  gap: 20px;
+  color: #ffff;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 .btn{
-  justify-content: end;
-  align-items: end;
-
-}
-.nav-container h1 {
-  color: white;
-  font-size: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(45deg, #c90a9f, #2e3031);
+  border-radius: 8px;
+  position: relative;
+  z-index: 1
+}
+.btn::before{
+    content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #f7f5f6, #02242e, #abe428);
+  z-index: -1;
+  background-size: 300%;
+  animation: glow 3s linear infinite;
+   z-index: -1;
+}
+@keyframes glow {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
 }
 
 .what-container {
@@ -101,9 +129,8 @@ hr {
   border: 1px solid #4d4a4a;
 }
 
-
 /* traning section */
-.why-choose{
+.why-choose {
   display: flex;
   align-items: center;
   text-align: center;
@@ -114,26 +141,24 @@ hr {
   font-weight: 600;
   font-family: "Inter", sans-serif;
   font-size: 2rem;
-
-
 }
-.grid-container{
+.grid-container {
   max-width: 1200px;
   min-height: 200px;
   margin: 0 auto;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,200px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
   color: white;
 }
-.cards{
+.cards {
   border-radius: 30px;
   background-color: #351165;
   /* display: block; */
   text-align: left;
   padding-left: 15px;
-  padding-right:10px ;
+  padding-right: 10px;
   padding-bottom: 15px;
   justify-content: center;
   align-items: center;
@@ -141,35 +166,34 @@ hr {
   width: 100%;
   height: 100%;
 }
-.cards h3{
+.cards h3 {
   font-size: 1.3rem;
   font-weight: 600;
   color: white;
   font-family: "Inter", sans-serif;
 }
-.cards p{
+.cards p {
   font-size: 1rem;
-  font-weight: 500 ;
+  font-weight: 500;
   color: #ffff;
   font-family: "Inter", sans-serif;
 }
-.items-2{
-  grid-column: 2/span 2;
+.items-2 {
+  grid-column: 2 / span 2;
 }
-.items-1{
-  grid-row: 1/span 2;
+.items-1 {
+  grid-row: 1 / span 2;
   display: flex;
   font-size: 1rem;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   align-items: center;
   justify-content: center;
 }
-.items-3{
-
-  grid-column: 2/span 2;
+.items-3 {
+  grid-column: 2 / span 2;
 }
-.items-4{
-  grid-column: 1/span 2;
+.items-4 {
+  grid-column: 1 / span 2;
 }
 /* for video */
 
@@ -272,7 +296,7 @@ hr {
   justify-content: center;
   gap: 20px;
   color: rgb(235, 233, 233);
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   text-align: center;
   padding: 20px;
 }
@@ -288,21 +312,21 @@ hr {
 }
 .icons-class {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   align-items: center;
 }
-.item{
+.item {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.footer-container h1{
+.footer-container h1 {
   font-size: 3rem;
-  font-weight:700 ;
+  font-weight: 700;
   font-family: "Inter", sans-serif;
 }
-.footer-container span{
+.footer-container span {
   color: rgb(221, 7, 221);
 }
 
@@ -323,14 +347,12 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
   .icons-class {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-     
   }
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-
   }
   .items-1,
   .items-2,
@@ -340,5 +362,11 @@ hr {
     grid-column: auto;
     grid-row: auto;
   }
-
+  .ul-div,
+  .btn {
+    display: none;
+  }
+  .menu {
+    display: inline;
+  }
 }
