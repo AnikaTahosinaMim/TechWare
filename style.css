@@ -9,7 +9,14 @@ body {
 /* this is the nav section */
 nav {
   background-color: #1a0b2e;
-  padding: 5px 0;
+  padding: 20px 0px;
+}
+.nav-hr{
+  width: 100%;
+  border: 1px solid rgb(85, 84, 84);
+  display: block;
+  margin: 0 auto;
+
 }
 
 .nav-container {
@@ -75,20 +82,30 @@ nav ul{
 /* star of banner sections */
 .banner{
   max-width: 1600px;
+  margin: 0 auto;
 }
 .main-img{
   position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.main-img img{
+  width: 100%;
+  height: auto;
 }
 .secound-img{
   position: absolute;
   inset: 0;
   top: 20%;
-  left: 37%;
+  left: 39.5%;
+  width: 20%;
 }
 .thir-img{
   position: absolute;
-  left: 44%;
-  top: 30%;
+  left: 47%;
+  top: 31%;
+  width: 15%;
 }
 .banner-text{
   position: absolute;
@@ -154,7 +171,7 @@ nav ul{
   position: absolute;
    /* transform: translateX(50%); */
   left: 40%;
-  top: 60%;
+  top: 50%;
   border-radius: 15px;
 }
 
@@ -216,7 +233,7 @@ nav ul{
   color: #00ff88;
 }
 
-hr {
+.about-href{
   max-width: 1200px;
   margin: 10px auto;
 
@@ -296,9 +313,21 @@ hr {
   background-color: #1a0b2e;
   margin: 0 auto;
 }
+.video-title{
+  max-width: 1200px;
+  margin: 40px auto;
+  color: white;
+  text-align: center;
+}
 .clock {
   display: flex;
-  gap: 6px;
+  gap: 3px;
+
+}
+.clock-title{
+  color: #00FF88 !important;
+  font-family:"Inter", sans-serif; 
+  font-size: 1rem;
 }
 .video-text {
   padding: 15px;
@@ -322,6 +351,13 @@ hr {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.video-container h2{
+  color: white;
+  font-size: 1.4rem;
+}
+.video-container p{
+  color: rgb(238, 237, 237);
 }
 /* this this challenge part*/
 .chal-section {
@@ -463,5 +499,9 @@ hr {
   .menu {
     display: inline;
   }
+  
+ 
+
+ 
   
 }
