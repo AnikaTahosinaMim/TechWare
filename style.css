@@ -83,6 +83,8 @@ nav ul{
 .banner{
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
 }
 .main-img{
   position: relative;
@@ -97,22 +99,27 @@ nav ul{
 .secound-img{
   position: absolute;
   inset: 0;
-  top: 20%;
+  top: 12%;
   left: 39.5%;
   width: 20%;
 }
 .thir-img{
   position: absolute;
   left: 47%;
-  top: 31%;
+  top: 25%;
   width: 15%;
 }
-.banner-text{
-  position: absolute;
-  left: 32%;
-  top: 80%;
-  text-align: center;
+.banner-text {
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    top: 69%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 50px;
 }
+
+
 .banner-text h1{
   color: white;
   font-size: 3rem;
@@ -131,12 +138,10 @@ nav ul{
 .mother-btn{
   display: flex;
   gap: 10px;
-  align-items: center;
-  position: absolute;
-  left: 8%;
-  margin-top: 10px;
-
+  justify-content: center;
+  margin-top: 15px;
 }
+
 .btn-02{
   display: flex;
   gap: 5px;
@@ -164,15 +169,15 @@ nav ul{
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
-.new{
-  padding: 8px 10px;
-  background-color: #00FF88;
-  border: none;
-  position: absolute;
-   /* transform: translateX(50%); */
-  left: 40%;
-  top: 50%;
-  border-radius: 15px;
+.new {
+    padding: 8px 10px;
+    background-color: #00FF88;
+    border: none;
+    position: absolute;
+    left: 56%;
+    top: 13%;
+    border-radius: 15px;
+    z-index: 2;
 }
 
 
@@ -183,7 +188,8 @@ nav ul{
   max-width: 1600px;
   background-color: #1a0b2e;
   margin: 0 auto;
-  max-height: 500px;
+  margin-top: 50px;
+
 }
 .what {
   max-width: 1200px;
@@ -505,3 +511,95 @@ nav ul{
  
   
 }
+
+
+@media screen and (max-width: 576px) {
+
+
+
+  .nav-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 12px;
+}
+  .banner{
+    min-height: auto;
+  }
+
+  .banner-text{
+    top: 70%;
+    width: 90%;
+  }
+
+  .text-div, .img-div, .what {
+    text-align: center;
+    margin-top: 262px;
+}
+.new {
+    padding: 8px 10px;
+    background-color: #00FF88;
+    border: none;
+    position: absolute;
+    left: 62%;
+    top: 18%;
+    border-radius: 15px;
+    z-index: 2;
+}
+.btn-02 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    padding: 0px 5px;
+    background: linear-gradient(45deg, yellow, #c90a9f, #391ead);
+    flex-direction: row;
+    width: 197px;
+    text-align: center;
+    justify-content: center;
+}
+
+.thir-img {
+    position: absolute;
+    left: 48%;
+    top: 40%;
+}
+
+img.hero_image_01 {
+    width: 100%;
+    margin-top: 80px;
+}
+img.hero_image_02 {
+    width: 220px;
+}
+img.hero_image_03 {
+    width: 60px;
+}
+
+.secound-img {
+    position: absolute;
+    inset: 0;
+    top: 20%;
+    left: 29.5%;
+    width: 20%;
+}
+
+
+.banner-text {
+    top: 99%;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+}
+}
+
+
+
