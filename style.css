@@ -226,6 +226,10 @@ nav ul{
   margin-top: 30px;
   margin-bottom: 0px;
 }
+
+h3.common_gap {
+    margin: 5px 0px;
+}
 .card p {
   color: rgb(248, 245, 245);
   font-size: 1rem;
